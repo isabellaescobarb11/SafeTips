@@ -5,7 +5,11 @@ namespace SafeTips.Controllers;
 
 public class HousekeeperController : Controller
 {
-    public IActionResult Index()
+    public IActionResult SafeTips()
+    {
+        return View();
+    }   
+    public IActionResult Housekeepers()
     {
         var housekeepers = new List<Housekeeper>
         {
@@ -27,5 +31,10 @@ public class HousekeeperController : Controller
         };
 
         return View(housekeepers);
+    }
+
+    public IActionResult Tip()
+    {
+        return View();
     }
 }

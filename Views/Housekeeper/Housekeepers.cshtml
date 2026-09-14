@@ -1,0 +1,54 @@
+@{
+    ViewData["Title"] = "Housekeepers Page";
+}
+
+<div>
+    <h1 class="text-center">Housekeeper Page</h1>
+</div>
+
+<div class="center-text mt-4">
+    <p>
+        Choose the housekeeper that was assigned to your room. This
+        will allow you to directly deposit funds into the housekeepers
+        wallet and send a thank you message!
+    </p>
+</div>
+
+<!-- hard coded for right now -->
+<div class="table-container mt-4">
+    <table class="table table-striped">
+        <caption>Available Housekeepers</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Room</th>
+                <th scope="col">Select</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Marcyne</td>
+                <td>201</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Housekeeper" asp-action="Tip"
+                       asp-route-housekeeper="Marcyne">
+                        Select
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Garry</td>
+                <td>202</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Housekeeper" asp-action="Tip"
+                       asp-route-housekeeper="Garry">
+                        Select
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

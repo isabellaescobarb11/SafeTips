@@ -6,7 +6,7 @@
     <h1 class="display-4">Welcome to Survey Says</h1>
 </div>
 
-<div class="text-left">
+<div class="text-left mt-4">
     <p>
         This is an application that can be used for safe tip transfers. A conversation with my mother 
         inspired me to create this project. For many years, my mother worked in the housekeeping industry 
@@ -18,22 +18,30 @@
     </p>
 </div>
 
-<div class="text-left">
+<div class="text-left mt-4">
     <h2>How SafeTips works:</h2>
     <p>
         <ol>
             <li>
-                1. Guests scan the QR code associated with their room
+                Guests scan the QR code associated with their room
             </li>
             <li>
-                2. The guest can see who serviced their room.
+                The guest can see who serviced their room.
             </li>
             <li>
-                3. The guest chooses an amount and securely sends the tip.
+                The guest chooses an amount and securely sends the tip.
             </li>
             <li>
-                4. Guests can optionally leave a thank-you message.
+                Guests can optionally leave a thank-you message.
             </li>
         </ol>
     </p>
+</div>
+
+<div class="text-center mt-4">
+    <h2>Ready to leave a tip?</h2>
+    <p>Send a tip directly to the housekeeper who serviced your room.</p>
+    <a class="btn btn-primary" asp-controller="Housekeeper" asp-action="Housekeepers">
+        Send a Tip
+    </a>
 </div>
