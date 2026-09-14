@@ -33,8 +33,9 @@ public class HousekeeperController : Controller
         return View(housekeepers);
     }
 
-    public IActionResult Tip()
+    public IActionResult Tip(string housekeeper)
     {
+        ViewBag.housekeeper = housekeeper;
         return View();
     }
 }
