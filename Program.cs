@@ -1,4 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using SafeTips.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<SafeTipsContext>(options =>
+    options.UseSqlite("Data Source=SafeTips.db"));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
